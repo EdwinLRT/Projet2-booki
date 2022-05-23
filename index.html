@@ -1,9 +1,74 @@
-<html>
-    <head>
-        <title>This is my webpage</title>
-    </head>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki - Hébergement de vacances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images\logo\Favicon-Booki.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="images\logo\Booki.png" alt="Logo-Booki">
+      </div>
+      <div id="menu-principal">
+        <nav>
+          <ul >
+             <li> <a  class="menu-items" href="#section-hebergement">Hébergements</a></li>
+             <li> <a  class="menu-items" href="#section-hebergement">Activités</a></li>
 
-    <body>
-    <p>hello world</p>
-    </body>
+          </ul>
+         </nav>
+      </div>
+
+    </header>
+    <main>
+      <section id="section-recherche">
+        <h1>Trouvez votre <strong>hébergement pour des vacances</strong> de rêve</h1>  
+        <h4>En plein centre ville ou en pleine nature</h4>
+        <h5>Plus de 500 logements sont disponibles dans cette ville</h5>
+        
+        <div id="filtres">
+          <ul>
+            <li>Économique</li>
+            <li>Familial</li>
+            <li>Romantique</li>
+            <li>Animaux autorisés</li>
+          </ul>
+        </div>
+      </section>
+      <section id="section-hebergements">
+        <div id="resultat-recherche">
+          <h3>Hébergements à Marseille</h3>
+        </div>
+        <div id="les-plus-populaires">
+          <h3>Les plus populaires</h3>
+        </div>
+      </section>
+
+      <section id="section-activites">
+        <h3>Activités à Marseille</h3>
+      </section>
+
+      <footer>
+        <div>
+          <h4>À propos</h4>
+          <p>Fonctionnement du site</p>
+          <p>Conditions générales de vente</p>
+          <p>Données et confidentialité</p>
+        </div>
+        <div>
+          <h4>Nos hébergements</h4>
+          <p>Charte qualité</p>
+          <p>Soumettre votre hôtel</p>
+        </div>
+        <div>
+          <h4>Assistance</h4>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+        </div>
+    </main>
+	<script src="index.js"></script>
+  </body>
 </html>

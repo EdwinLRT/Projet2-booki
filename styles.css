@@ -1,0 +1,62 @@
+header
+{
+    display: flex;
+    justify-content: space-between;
+  }
+
+     #logo img
+    {
+        display: flex;
+        margin: 25px 0  0 50px;
+        height: 50px;
+
+    }
+
+     #menu-principal
+    {
+        height: auto;
+        display: inline;
+        flex-direction:column;
+     }
+
+    #menu-principal ul
+    {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-between;
+     }
+
+    #menu-principal ul li
+{
+        margin: 25px 40px 0 20px;
+
+
+
+
+  }
+
+  .menu-items
+  {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color : #000000;
+        text-decoration: none;
+  }
+
+    .menu-items:hover
+  {
+        color : #0065fc;
+        border-top: solid 2px #0065fc;
+        padding-top: 40px;
+  }
+
+
+     .menu-items:focus
+{
+        color : #0065fc;
+        border-top: solid 2px #0065fc;
+
+ }
+
+
