@@ -1,4 +1,5 @@
-*{
+body
+{
     font-family: 'Raleway', sans-serif;
 
 }
@@ -40,7 +41,7 @@ header
         max-width: 150px;
     }
 
-#menu-principal
+#main-menu
     {
         height: auto;
         display: flex;
@@ -49,7 +50,7 @@ header
      
 
 
-#menu-principal > nav > ul
+#main-menu > nav > ul
 {
     display: flex;
     flex-direction: row; 
@@ -60,7 +61,7 @@ header
     justify-content: space-between;
 }
 
-#menu-principal ul li
+#main-menu ul li
 {
     display: flex;
     justify-content: center;
@@ -78,14 +79,14 @@ header
     padding-top: 22px;
 }
 @media screen and (min-width: 993px){
-    #menu-principal > nav > ul > li:hover
+    #main-menu > nav > ul > li:hover
     {
           color : #0065fc;
          border-top: solid 2px #0065fc;
     }
 }
 
-#menu-principal > nav > ul > li:focus
+#main-menu > nav > ul > li:focus
 {
         color : #0065fc;
         border-top: solid 2px #0065fc;
@@ -115,19 +116,19 @@ header
             align-items: center;
             justify-content: center;
         }
-        #menu-principal
+        #main-menu
         {
             display: flex;
             width: 100%;
         }
-        #menu-principal > nav > ul
+        #main-menu > nav > ul
         {
             display: flex;
             justify-content: center;
             padding: 0;
             flex: 1 1 0px;
         }
-        #menu-principal > nav > ul > li
+        #main-menu > nav > ul > li
         {
             display: flex;
             flex-grow: 1;
@@ -136,7 +137,7 @@ header
             margin: 0;
 
         }
-        #menu-principal > nav > ul > li > a
+        #main-menu > nav > ul > li > a
         {
             display: flex;
             justify-content: center;
@@ -145,7 +146,7 @@ header
         }
 
 
-        #menu-principal > nav
+        #main-menu > nav
         {
             width: 100%;
             display: flex;
@@ -177,18 +178,8 @@ header
 
 }
 
-@media screen and (min-width: 769px) and (max-width:992)
-{
-    body
-    {
-        width: 900px;
-    }
-}
-
-
 /* ---------- SEARCH AND FILTERS ---------- */
-/* section recherche*/ 
-#section-recherche
+#search-section
 {
     margin: 0 0 0 20px;
 }
@@ -196,7 +187,7 @@ header
 /* Title */ 
 #page-slogan
 {
- margin: 0 0 0 0px;
+ margin: 0 0 0 0;
 }
 #page-slogan-title
 {
@@ -224,7 +215,7 @@ header
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0 0 10px;
     margin-right: -4px;
     background-color: #f2f2f2;
     height: 41px ;
@@ -251,7 +242,7 @@ header
     color: #FFFFFF;
     background-color: #0065fc;
     border: #0065fc solid 3px;
-    border-radius: 0px 10px 10px 0px ;
+    border-radius: 0 10px 10px 0 ;
 }
 #searchFormIconButton
 {
@@ -375,9 +366,9 @@ ul
             font-size: 18px;
             margin: 0 0 30px 20px;
         }
-        #section-recherche
+        #search-section
         {
-            margin: 0px 0px 0px 0px ;
+            margin: 0 0 0 0 ;
         }
         #search-bar
         {
@@ -441,7 +432,7 @@ ul
         }
         #search-occurences-results
         {
-            margin: 0 0px 25px 10px;
+            margin: 0 0 25px 10px;
             display: flex;
 
         }
@@ -848,7 +839,7 @@ ul
     height: 85%;
     max-height: 128px;
     object-fit: cover;
-    border-radius: 17px 17px 0px 0px ;
+    border-radius: 17px 17px 0 0 ;
 }
 /* #activitiesCardSection > div > a> div > h4
 {
@@ -1056,7 +1047,4 @@ footer
         align-items: center;
 
     }
-    #footer-column-3
-
-
 }
