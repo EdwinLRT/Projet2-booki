@@ -46,10 +46,9 @@ header
         display: flex;
         flex-direction:row;
      }
-#menu-principal > nav
-{
+     
 
-}
+
 #menu-principal > nav > ul
 {
     display: flex;
@@ -65,9 +64,8 @@ header
 {
     display: flex;
     justify-content: center;
-    margin: 0px 20px 0 20px;
     height: 100%;
-    min-width: 120px;
+    min-width: 160px;
 
 }
 
@@ -423,7 +421,14 @@ ul
             border-radius: 10px 10px 10px 10px;
             background-color: #0065fc;
         }
-
+        #filters
+        {
+            padding-left: 15px;
+        }
+        #filters > h4:nth-child(1)
+        {
+            padding-left: 10px;
+        }
         #filters > ul
         {
             padding: 0 0 0 0 ;
@@ -443,7 +448,7 @@ ul
         #search-occurences-results > h5
         {
             margin: 0 0 0 0 ;
-            padding: 20px 5px 0 5px;
+            padding: 20px 30px 0 5px;
             font-size: 16px;
             font-weight: 400;
         }
@@ -453,10 +458,26 @@ ul
 
 @media screen and (min-width: 769px) and (max-width:992px)
 {
+    #filters
+    {
+        padding-left: 0px;   
+    }
     #filters > ul
     {
         padding-left: 0px;
     }
+    #filters > h4:nth-child(1)
+    {
+        margin:40px 0px 0px 0px;
+        display: inline;
+        width: 100%;
+    }
+    #filters > ul > li
+    {
+        margin-right: 10px;
+    }
+    
+
 
 }
 
@@ -643,6 +664,7 @@ ul
         display: flex;
         flex-direction: column;
         width: 100%;
+        gap: 15px;
         margin: 0 0 0 0;
         padding: 0 0 0 0 ;
         border-radius: 0 0 0 0;
@@ -683,6 +705,7 @@ ul
         display: flex;
         align-items: center;
         width: 100%;
+        gap: 15px;
         padding: 0 0px 35px 0px;
         margin: 0 0px 0 0px;
         border-radius: 0 0 0 0;
@@ -726,12 +749,14 @@ ul
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-        margin: 0 0 50px 0;
+        padding-left: 0px;
+        padding-right: 0px ;
         background-color: #FFFFFF;
 
     }
     #most-popular
     {
+        margin-top: 0px;
         display: flex;
         width: 100%;
         padding: 0 50px 0 50px;
@@ -920,6 +945,52 @@ ul
         max-height: 130px;
     }
 }
+@media screen   and (min-width: 769px) 
+                and (max-width:992px)
+{
+    #activitiesSection
+    {
+        margin-top: 0;
+    }
+    #activitiesCardSection
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+
+
+    }
+    #activitiesCardSection > div.activitiesColumn1
+    {
+    max-height: 196px;
+    }
+    #activitiesCardSection > div.activitiesColumn2
+    {
+        max-height: 432px;
+    }
+    #activitiesCardSection > div.activitiesColumn3
+    {
+        max-height: 196px;
+    }
+    #activitiesCardSection > div.activitiesColumn4
+    {
+        max-height: 432px;
+    }
+    #activitiesCardSection > div
+    {
+        width: 70%;
+    }
+    #activitiesCardSection > div.activitiesColumn2 > a.activitiesboxBig
+    {
+        max-height: 196px;
+    }
+    #activitiesCardSection > div > a > img
+    {
+        max-height: 130px;
+    }
+}
 
 
 
@@ -957,5 +1028,35 @@ footer
         margin-bottom: 15px;
         font-weight: 500;
     }
+
+}
+
+@media screen   and (min-width: 769px) 
+                and (max-width:992px)
+{
+    footer
+    {
+        display: flex;
+        padding: 0 30px 50px 30px;
+    }
+    #footerColumns
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    #footerColumns > div
+    {
+        display: flex;
+        flex-direction: column;
+        min-width: 240px;
+        align-items: center;
+
+    }
+    #footer-column-3
+
 
 }
