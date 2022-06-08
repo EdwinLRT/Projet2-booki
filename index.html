@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki - Hébergement de vacances</title>
   <!--Css links -->
-    <link rel="stylesheet" href="css\normalize.css">
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 
   <!--Favicon-->
     <link rel="icon" href="images/logo/Favicon-Booki.png" type="image/x-icon">
@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/20f352598c.js" crossorigin="anonymous"></script>
   </head>
-
 
   <body>
 
@@ -48,47 +47,41 @@
           <h4 id="page-slogan-subtitle">En plein centre ville ou en pleine nature</h4>
         </div>
 
-        <div id="search-bar">
-          <i class='fas fa-map-marker-alt'></i>
-          <input class="input-style" type="search" placeholder="Marseille, France" id="site-search" name="q">
-          <!-- Desktop button -->
-          <button id="search-bar-button">Rechercher</button>
-          <!-- Mobile button -->
-          <button id="searchFormIconButton"><i class='fas fa-search' style='font-size:16px'></i></button>
-        </div>
+        <span id="search-bar">
+          <i class="fas fa-map-marker-alt searchFormWrapiconIcon" aria-hidden="true"></i>
+        </span>
+        <input class="input-style" type="search" placeholder="Marseille, France" id="site-search" name="q">
+    <!-- Desktop button -->
+         <button id="search-bar-button">Rechercher</button>
+    <!-- Mobile button -->
+         <button id="search-form-icon-button"><i class='fas fa-search' style='font-size:16px'></i></button>
 
         <div id="filters">
           <H4>Filtres</H4>
           <ul>
-            <a href="#">
+
               <li>
                   <i class='fas fa-money-bill-wave search-filter-icons' style='font-size:18px'></i>
                   <span class="search-filters-title"> Économique</span>
               </li>
-            </a>
-            <a href="#">
-              <li>
 
+
+              <li>
                   <i class='fas fa-child search-filter-icons' style='font-size:18px'></i> 
                   <span class="search-filters-title"> Familial</span>
-
               </li>
-            </a>
-            <a href="#">
-              <li>
 
+            
+              <li>
                   <i class='fas fa-heart search-filter-icons' style="font-size:18px"></i>
                   <span class="search-filters-title"> Romantique</span>
               </li>
-            </a>
-            <a href="#">
-              <li>
 
+              <li>
                   <i class='fas fa-dog search-filter-icons' style='font-size:24px'></i>
                   <span class="search-filters-title"> Animaux autorisés</span>
-
               </li>
-            </a>
+
           </ul>
         </div>
         <div id="search-occurences-results">        
@@ -241,10 +234,10 @@
     </main> 
 
 <!--ACTIVITIES-->
-    <section id="activitiesSection">
-        <h3 id="activitiesTitle">Activités à Marseille</h3>
-      <div id="activitiesCardSection">
-        <div class="activitiesColumn1">
+    <section id="activities-section">
+        <h3 id="activities-title">Activités à Marseille</h3>
+      <div id="activities-card-section">
+        <div class="activities-column1">
           <a class="activitiesbox" href="#">
                 <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux-port-de-marseille">
               <div  class="activitiesColumnDisplay">
@@ -252,22 +245,22 @@
               </div>
           </a>
         </div>
-        <div class="activitiesColumn2">
-          <a class="activitiesboxBig" href="#">
+        <div class="activities-column2">
+          <a class="activitiesbox-big" href="#">
                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort-pomegues">
               <div  class="activitiesColumnDisplay">
                 <h4>Fort de Pomègues</h4>
               </div>
           </a>
 
-          <a class="activitiesboxSmall" href="#">
+          <a class="activitiesbox-small" href="#">
                   <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles-du-frioul">
               <div  class="activitiesColumnDisplay">
                 <h4>Îles du Frioul</h4>
               </div>
           </a>
         </div>
-        <div class="activitiesColumn3">
+        <div class="activities-column3">
           <a class="activitiesbox" href="#">
                   <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc-national-des-calanques">
               <div  class="activitiesColumnDisplay">
@@ -275,7 +268,7 @@
               </div>
           </a>
         </div>
-        <div class="activitiesColumn4">
+        <div class="activities-column4">
           <a class="activitiesboxSmall" href="#">
                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo-notre-dame-de-la-garde">
               <div  class="activitiesColumnDisplay">
@@ -283,7 +276,7 @@
               </div>
           </a>
 
-          <a class="activitiesboxBig" href="#">
+          <a class="activitiesbox-big" href="#">
                   <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="fontaine-parc-longchamp">
               <div  class="activitiesColumnDisplay">
                 <h4>Parc Longchamp</h4>
@@ -292,11 +285,10 @@
         </div>
       </div>
     </section> 
-   <!--ACTIVITIES-->
 
    <!--FOOTER-->
     <footer>
-      <section id="footerColumns">
+      <section id="footer-columns">
           <div id="footer-column-1">
             <h4>À propos</h4>
             <p>Fonctionnement du site</p>
