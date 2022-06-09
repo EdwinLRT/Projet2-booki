@@ -17,7 +17,6 @@ h3
 {
     body{
         min-width: 200px;
-        max-width: 450px;
     }
     
 }
@@ -397,7 +396,7 @@ ul
             align-items: center;
             min-width: 40px;
             border: #0065fc solid 2px;
-            border-radius: 10px 10px 10px 10px;
+            border-radius: 0px 10px 10px 0px;
             background-color: #0065fc;
         }
         #filters
@@ -680,7 +679,6 @@ ul
     #popular-products > a
     {
         width: 85%;
-        max-width: 350px;
     }
 }
 
